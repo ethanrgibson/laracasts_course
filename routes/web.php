@@ -3,7 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home',[
+    return view('home');
+});
+
+Route::get('/jobs', function () {
+    return view('jobs',[
         'greeting' => 'Hello',
         'jobs' => [
             [
@@ -20,10 +24,6 @@ Route::get('/', function () {
             ]
         ]
     ]);
-});
-
-Route::get('/about', function () {
-    return view('about');
 });
 
 Route::get('/contact', function(){
