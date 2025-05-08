@@ -53,7 +53,6 @@ $jobs = [
 
         $job = Arr::first($jobs, fn($job) => $job['id'] == $id);
 
-        dd($job );
 
     return view('job', ['job' => $job ]);
 });
